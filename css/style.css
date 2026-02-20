@@ -1,1 +1,97 @@
 
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(to bottom, #d8f3dc, #95d5b2);
+    color: #1b4332;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: #1b4332;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #95d5b2;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    animation: fadeIn 1.5s ease-in;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 30px;
+    background: #2d6a4f;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #40916c;
+    transform: scale(1.05);
+}
+
+section {
+    max-width: 800px;
+    margin: auto;
+    padding: 60px 20px;
+    line-height: 1.7;
+}
+
+.story-box {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    animation: fadeUp 1.5s ease;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1b4332;
+    color: white;
+}
+
+/* Animācijas */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
